@@ -17,7 +17,7 @@ namespace Zoolandia.Animals
         }
     }
 
-    // The species for a Red Pana
+    // The species for a Red Panda
     class AilurusFulgens : Animal
     {
         // Define simple properties for a Red Panda
