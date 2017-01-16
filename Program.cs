@@ -9,7 +9,10 @@ namespace ConsoleApplication
         {
             Console.WriteLine("Hello World!");
 
-            
+            //Instance of red panda class
+            var redPanda = new AilurusFulgens();
+            redPanda.eatsBamboo = true;
+            Console.WriteLine("(true/false) Does a red panda eat bamboo? "+ redPanda.eatsBamboo);
         }
     }
 }
