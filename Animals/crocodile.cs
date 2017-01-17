@@ -13,5 +13,22 @@ namespace Zoolandia.Animals
     {
         string commonName = "Crocodile";
         string scientificName = "Crocodylus";
+
+        //overloaded methods
+        public void eat()
+        {
+            Console.WriteLine($"{this.name} needs to eat.");
+        }
+        public void eat(string food)
+        {
+            Console.WriteLine($"You gave {this.name} some {food} to eat.");
+        }
+
+        //public virtual method override
+         public override void run()
+        {
+            Console.WriteLine("get out of the water!");
+        }
     }
+
 }

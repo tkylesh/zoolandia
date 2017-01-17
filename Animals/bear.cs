@@ -13,6 +13,16 @@ namespace Zoolandia.Animals
     {
         string commonName = "Grizzly Bear";
         string scientificName = "Ursus Arctos Horriblis";
+
+        //overloaded methods
+        public void eat()
+        {
+            Console.WriteLine($"{this.name} needs to eat.");
+        }
+        public void eat(string food)
+        {
+            Console.WriteLine($"You gave {this.name} some {food} to eat.");
+        }
         public UrsusArctosHorriblis(string name)
         {
             this.name = name;
@@ -35,9 +45,15 @@ namespace Zoolandia.Animals
 
         public bool hasClaws {get; set;}
 
+        //public virtual method override
         public override void sleep()
         {
             Console.WriteLine("snorreee!");
+        }
+
+        public override void run()
+        {
+            Console.WriteLine("You can't outrun a bear, you gotta wrastle `em");
         }
     }
 }

@@ -34,9 +34,24 @@ namespace Zoolandia.Animals
         // Define simple properties for a Red Panda
         public bool eatsBamboo {get; set;}
 
+
+        //overloaded methods
+        public void eat()
+        {
+            Console.WriteLine($"{this.name} needs to eat.");
+        }
+        public void eat(string food)
+        {
+            Console.WriteLine($"You gave {this.name} some {food} to eat.");
+        }
+        //public virtual method override
         public override void sleep()
         {
             Console.WriteLine("sleeping panda!");
+        }
+        public override void run()
+        {
+            Console.WriteLine("no need to run.");
         }
     }
 

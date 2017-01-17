@@ -14,6 +14,16 @@ namespace Zoolandia.Animals
         string commonName = "Great White Shark";
         string scientificName = "Carcharodon Carcharias";
 
+
+        //overloaded methods
+        public void eat()
+        {
+            Console.WriteLine($"{this.name} needs to eat.");
+        }
+        public void eat(string food)
+        {
+            Console.WriteLine($"You gave {this.name} some {food} to eat.");
+        }
         public CarcharodonCarcharias(string name)
         {
             this.name = name;
@@ -30,9 +40,15 @@ namespace Zoolandia.Animals
             this.legs = legs;
         }
 
+        //public virtual method override
         public override void sleep()
         {
             Console.WriteLine("chompsnorreee!");
+        }
+
+        public override void run()
+        {
+            Console.WriteLine("dundun...dundun...dundun.dundun.dundun.");
         }
 
     }
