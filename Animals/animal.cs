@@ -11,6 +11,8 @@ namespace Zoolandia.Animals
 
         public bool fur {get; set;}
 
+        public string species {get; set;}
+
 
         public virtual void sleep ()
         {

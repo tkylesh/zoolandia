@@ -11,8 +11,10 @@ namespace Zoolandia.Animals
     // Species class, inherits from the corresponding genus class
     public class Crocodile:Crocodylus
     {
-        string commonName = "Crocodile";
-        string scientificName = "Crocodylus";
+        public string commonName = "Crocodile";
+        public string scientificName = "Crocodylus";
+
+        public string genus = "Crocodylus";
 
         //overloaded methods
         public void eat()
