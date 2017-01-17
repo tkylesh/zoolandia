@@ -8,6 +8,17 @@ namespace Zoolandia.Animals
         {
             this.name = name;
         }
+
+        public Bear(int legs)
+        {
+            this.legs = legs;
+        }
+
+        public Bear(string name, int legs)
+        {
+            this.name = name;
+            this.legs = legs;
+        }
         public void Roar()
         {
             Console.WriteLine("RAAAWWR!");        

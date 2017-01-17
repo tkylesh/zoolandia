@@ -10,6 +10,17 @@ namespace Zoolandia.Animals
         {
             this.name = name;
         }
+
+        public AilurusFulgens(int legs)
+        {
+            this.legs = legs;
+        }
+
+        public AilurusFulgens(string name, int legs)
+        {
+            this.name = name;
+            this.legs = legs;
+        }
         
         // Define simple properties for a Red Panda
         public bool eatsBamboo {get; set;}

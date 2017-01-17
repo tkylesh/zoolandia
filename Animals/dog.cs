@@ -9,6 +9,17 @@ namespace Zoolandia.Animals
         {
             this.name = name;
         }
+
+        public Dog(int legs)
+        {
+            this.legs = legs;
+        }
+
+        public Dog(string name, int legs)
+        {
+            this.name = name;
+            this.legs = legs;
+        }
         public bool hasTail {get; set;}
 
         public bool chasesSquirells {get; set;}
