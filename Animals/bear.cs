@@ -11,8 +11,10 @@ namespace Zoolandia.Animals
     // Species class, inherits from the corresponding genus class
      public class UrsusArctosHorriblis: Ursus
     {
-        string commonName = "Grizzly Bear";
-        string scientificName = "Ursus Arctos Horriblis";
+        public string commonName = "Grizzly Bear";
+        public string scientificName = "Ursus Arctos Horriblis";
+
+        public string genus = "Ursus";
 
         //overloaded methods
         public void eat()
