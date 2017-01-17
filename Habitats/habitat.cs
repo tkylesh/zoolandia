@@ -33,7 +33,7 @@ namespace Zoolandia.Habitats
       {
         throw new System.NotImplementedException();
       }
-      private List<Employee> scubaCrew = new List<Employee>();
+    //   private List<Employee> scubaCrew = new List<Employee>();
 
       // `public_name`, and `saltwater` properties can only be set when habitat is created
       public Aquarium (string name, bool isSaltwater)
