@@ -27,11 +27,11 @@ namespace Zoolandia.Habitats
       public double volume { get; set; }
       public void empty()
       {
-        throw new System.NotImplementedException();
+        Console.WriteLine("Aquatic tank empty!");
       }
       public void fill()
       {
-        throw new System.NotImplementedException();
+        Console.WriteLine("Aquatic tank fill!");
       }
     //   private List<Employee> scubaCrew = new List<Employee>();
 
