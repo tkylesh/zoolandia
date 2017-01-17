@@ -4,6 +4,10 @@ namespace Zoolandia.Animals
 {
      public class Bear: Animal
     {
+        public Bear(string name)
+        {
+            this.name = name;
+        }
         public void Roar()
         {
             Console.WriteLine("RAAAWWR!");        
