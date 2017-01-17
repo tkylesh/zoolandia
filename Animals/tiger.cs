@@ -11,6 +11,7 @@ namespace Zoolandia.Animals
     // Species class, inherits from the corresponding genus class
     public class PantheraTigris:Crocodylus
     {
-        
+        string commonName = "Tiger";
+        string scientificName = "Panthera Tigris";
     }
 }

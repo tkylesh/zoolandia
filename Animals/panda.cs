@@ -13,6 +13,8 @@ namespace Zoolandia.Animals
     // The species for a Giant Panda
      public class Ailuropodamelanoleuca: Ailuropoda
     {
+        string commonName = "Giant Panda";
+        string scientificName = "Ailuropodamelanoleuca";
         public Ailuropodamelanoleuca(string name)
         {
             this.name = name;

@@ -16,6 +16,11 @@ namespace Zoolandia.Animals
         {
             Console.WriteLine("ZZzzzzzzz...");
         }
+
+        public virtual void run()
+        {
+            Console.WriteLine("runnnnnn!!!!!!!");
+        }
     }
 
 }

@@ -9,8 +9,10 @@ namespace Zoolandia.Animals
     }
 
     // Species class, inherits from the corresponding genus class
-        public class CarcharodonCarcharias: Carcharodon
+    public class CarcharodonCarcharias: Carcharodon
     {
+        string commonName = "Great White Shark";
+        string scientificName = "Carcharodon Carcharias";
 
         public CarcharodonCarcharias(string name)
         {
