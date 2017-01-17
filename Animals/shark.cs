@@ -3,16 +3,17 @@ using System;
 namespace Zoolandia.Animals
 {
     // Genus class, inherits from animal class
-    public class Ursus:Animal
+    public class Carcharodon:Animal
     {
         //add properties and methods
     }
 
     // Species class, inherits from the corresponding genus class
-     public class UrsusArctosHorriblis: Ursus
+    public class CarcharodonCarcharias: Carcharodon
     {
-        string commonName = "Grizzly Bear";
-        string scientificName = "Ursus Arctos Horriblis";
+        string commonName = "Great White Shark";
+        string scientificName = "Carcharodon Carcharias";
+
 
         //overloaded methods
         public void eat()
@@ -23,37 +24,33 @@ namespace Zoolandia.Animals
         {
             Console.WriteLine($"You gave {this.name} some {food} to eat.");
         }
-        public UrsusArctosHorriblis(string name)
+        public CarcharodonCarcharias(string name)
         {
             this.name = name;
         }
 
-        public UrsusArctosHorriblis(int legs)
+        public CarcharodonCarcharias(int legs)
         {
             this.legs = legs;
         }
 
-        public UrsusArctosHorriblis(string name, int legs)
+        public CarcharodonCarcharias(string name, int legs)
         {
             this.name = name;
             this.legs = legs;
         }
-        public void Roar()
-        {
-            Console.WriteLine("RAAAWWR!");        
-        }
-
-        public bool hasClaws {get; set;}
 
         //public virtual method override
         public override void sleep()
         {
-            Console.WriteLine("snorreee!");
+            Console.WriteLine("chompsnorreee!");
         }
 
         public override void run()
         {
-            Console.WriteLine("You can't outrun a bear, you gotta wrastle `em");
+            Console.WriteLine("dundun...dundun...dundun.dundun.dundun.");
         }
+
     }
+
 }

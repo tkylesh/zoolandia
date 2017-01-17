@@ -9,22 +9,22 @@ namespace ConsoleApplication
         {
             Console.WriteLine("Hello World!");
 
-            //Instance of red panda class
-            var redPanda = new AilurusFulgens("Mr. panda red");
-            redPanda = new AilurusFulgens(4);
-            redPanda = new AilurusFulgens("Mrs. PANDA RED",4);
-            redPanda.eatsBamboo = true;
-            Console.WriteLine("Implementation of red panda");
-            Console.WriteLine($"(true/false) Does a red panda eat bamboo? {redPanda.eatsBamboo}.");
-            Console.WriteLine($"panda's name is  {redPanda.name}, she has {redPanda.legs} legs.");
-            redPanda.sleep();
+            //Instance of giant panda class
+            var panda = new Ailuropodamelanoleuca("Mr. panda giant");
+            panda = new Ailuropodamelanoleuca(4);
+            panda = new Ailuropodamelanoleuca("Mrs. PANDA giant",4);
+            panda.eatsBamboo = true;
+            Console.WriteLine("Implementation of giant panda");
+            Console.WriteLine($"(true/false) Does a giant panda eat bamboo? {panda.eatsBamboo}.");
+            Console.WriteLine($"panda's name is  {panda.name}, she has {panda.legs} legs.");
+            panda.sleep();
             Console.WriteLine("\n");
 
-            //Instance of bear class
+            //Instance of grizzly bear class
             Console.WriteLine("Implementation of bear");
-            var bear = new Bear("yogi");
-            bear = new Bear(4);
-            bear = new Bear("YOGI",4);
+            var bear = new UrsusArctosHorriblis("yogi");
+            bear = new UrsusArctosHorriblis(4);
+            bear = new UrsusArctosHorriblis("YOGI",4);
             Console.WriteLine($"bear's name is {bear.name}, he has {bear.legs} legs.");
             bear.Roar();
             bear.sleep();
@@ -33,15 +33,13 @@ namespace ConsoleApplication
             
 
 
-            //Instance of dog class
-            Console.WriteLine("Implementation of bear");
-            var dog = new Dog("zero");
-            dog = new Dog(4);
-            dog = new Dog("ZERO",4);
-            Console.WriteLine($"dog's name is {dog.name}, he has {dog.legs} legs.");
-            dog.bark();
-            dog.chasesSquirells = true;
-            dog.sleep();
+            //Instance of great white shark class
+            Console.WriteLine("Implementation of shark");
+            var shark = new CarcharodonCarcharias("zero");
+            shark = new CarcharodonCarcharias(4);
+            shark = new CarcharodonCarcharias("ZERO",4);
+            Console.WriteLine($"shark's name is {shark.name}.");
+            shark.sleep();
             Console.WriteLine("\n");
         }
     }
