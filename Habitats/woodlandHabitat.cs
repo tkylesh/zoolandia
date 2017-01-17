@@ -28,5 +28,11 @@ namespace Zoolandia.Habitats
         {
             throw new NotImplementedException();
         }
+
+        public WoodlandHabitat (string name, int acres)
+        {
+            this.acres = acres;
+            this.public_name = name;
+        }
     }
 }

@@ -28,5 +28,11 @@ namespace Zoolandia.Habitats
         {
             throw new NotImplementedException();
         }
+
+        public BirdHabitat (string name, int sqfeet)
+        {
+            this.sqft = sqfeet;
+            this.public_name = name;
+        }
     }
 }
