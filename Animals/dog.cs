@@ -8,6 +8,11 @@ namespace Zoolandia.Animals
 
         public bool chasesSquirells {get; set;}
 
+        public void bark()
+        {
+            Console.WriteLine("ardvark! ardvark!");
+        }
+
     }
 
 }

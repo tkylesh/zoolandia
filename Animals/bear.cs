@@ -4,8 +4,10 @@ namespace Zoolandia.Animals
 {
      public class Bear: Animal
     {
-        public string height {get; set;}
-        public int weight {get; set;}
+        public void Roar()
+        {
+            Console.WriteLine("RAAAWWR!");        
+        }
 
         public bool hasClaws {get; set;}
     }
