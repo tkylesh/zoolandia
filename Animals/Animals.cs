@@ -11,7 +11,7 @@ namespace Zoolandia.Animals
         public bool fur {get; set;}
 
 
-        public void sleep ()
+        public virtual void sleep ()
         {
             Console.WriteLine("ZZzzzzzzz...");
         }

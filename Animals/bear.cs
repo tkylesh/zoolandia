@@ -10,5 +10,10 @@ namespace Zoolandia.Animals
         }
 
         public bool hasClaws {get; set;}
+
+        public override void sleep()
+        {
+            Console.WriteLine("snorreee!");
+        }
     }
 }
