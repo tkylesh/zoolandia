@@ -2,19 +2,28 @@ using System;
 
 namespace Zoolandia.Animals
 {
-     public class Bear: Animal
+    // Genus class, inherits from animal class
+    public class Ursus:Animal
     {
-        public Bear(string name)
+        //add properties and methods
+    }
+
+    // Species class, inherits from the corresponding genus class
+     public class UrsusArctosHorriblis: Ursus
+    {
+        string commonName = "Grizzly Bear";
+        string scientificName = "Ursus Arctos Horriblis";
+        public UrsusArctosHorriblis(string name)
         {
             this.name = name;
         }
 
-        public Bear(int legs)
+        public UrsusArctosHorriblis(int legs)
         {
             this.legs = legs;
         }
 
-        public Bear(string name, int legs)
+        public UrsusArctosHorriblis(string name, int legs)
         {
             this.name = name;
             this.legs = legs;
