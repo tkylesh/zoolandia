@@ -2,6 +2,24 @@ using System;
 
 namespace Zoolandia.Animals
 {
+    //interfaces
+    interface LandDweller
+    {
+        void run();
+        void walk();
+    }
+
+    interface WaterDweller
+    {
+        void swim();
+    }
+
+    interface Flying
+    {
+        void fly();
+        void land();
+    }
+
     // Base animal class
     public class Animal
     {
