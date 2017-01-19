@@ -31,16 +31,16 @@ namespace Zoolandia.Animals
             this.name = name;
         }
 
-        public CarcharodonCarcharias(int legs)
-        {
-            this.legs = legs;
-        }
+        // public CarcharodonCarcharias(int legs)
+        // {
+        //     this.legs = legs;
+        // }
 
-        public CarcharodonCarcharias(string name, int legs)
-        {
-            this.name = name;
-            this.legs = legs;
-        }
+        // public CarcharodonCarcharias(string name, int legs)
+        // {
+        //     this.name = name;
+        //     this.legs = legs;
+        // }
 
         //public virtual method override
         public override void sleep()

@@ -21,25 +21,19 @@ namespace Zoolandia.Habitats
     double volume { get; set; }
   }
 
-  public class Aquarium : Habitat, IAquaticHabitat
+  public interface IWoodlandHabitat
   {
-      private bool _saltwater = false;
-      public double volume { get; set; }
-      public void empty()
-      {
-        throw new System.NotImplementedException();
-      }
-      public void fill()
-      {
-        throw new System.NotImplementedException();
-      }
-    //   private List<Employee> scubaCrew = new List<Employee>();
+    void trees();
+    void grass();
 
-      // `public_name`, and `saltwater` properties can only be set when habitat is created
-      public Aquarium (string name, bool isSaltwater)
-      {
-          _saltwater = isSaltwater;
-          this.public_name = name;
-      }
+    int acres {get; set;}
+  }
+
+  public interface IBirdHabitat
+  {
+    void perch();
+
+    void trees();
+    int sqft {get; set;}
   }
 }
