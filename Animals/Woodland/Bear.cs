@@ -30,16 +30,16 @@ namespace Zoolandia.Animals
             this.name = name;
         }
 
-        public UrsusArctosHorriblis(int legs)
-        {
-            this.legs = legs;
-        }
+        // public UrsusArctosHorriblis(int legs)
+        // {
+        //     this.legs = legs;
+        // }
 
-        public UrsusArctosHorriblis(string name, int legs)
-        {
-            this.name = name;
-            this.legs = legs;
-        }
+        // public UrsusArctosHorriblis(string name, int legs)
+        // {
+        //     this.name = name;
+        //     this.legs = legs;
+        // }
         public void Roar()
         {
             Console.WriteLine("RAAAWWR!");        

@@ -11,7 +11,7 @@ namespace ConsoleApplication
         {
             // Console.WriteLine("Hello World!");
 
-            //Create new habitat
+            //Create new aquarium habitat
             Aquarium fishTank = new Aquarium("Aquarium", true);
 
             //Create new Animals
@@ -32,6 +32,54 @@ namespace ConsoleApplication
             {
                 Console.WriteLine(inhabitant.name);
             }
+
+            //create new woodland habitat
+            WoodlandHabitat woods = new WoodlandHabitat("Woods", 2000);
+
+            //Create new Animals
+            UrsusArctosHorriblis bear = new UrsusArctosHorriblis("Grizzly Bear");
+            Ailuropodamelanoleuca panda = new Ailuropodamelanoleuca("Giant Panda");
+            PantheraTigris tiger = new PantheraTigris("Tiger");
+
+            //add animal to a list of Animals
+            List<Animal> landDwellers = new List<Animal>();
+            landDwellers.Add(bear);
+            landDwellers.Add(panda);
+            landDwellers.Add(tiger);
+
+            //add to habitat inhabitants list
+            woods.inhabitants = landDwellers;
+            //iterate over list
+            Console.WriteLine("\n\n");
+            Console.WriteLine("Habitat: Woodlands");
+            foreach(Animal inhabitant in landDwellers)
+            {
+                Console.WriteLine(inhabitant.name);
+            }
+
+
+            //Create new bird habitat
+            BirdHabitat birdHabitat = new BirdHabitat("Bird Habitat", 4000);
+
+            //Create new Animals
+            Falconiforme falcon = new Falconiforme("Falcon");
+
+            //add animal to a list of Animals
+            List<Animal> birds = new List<Animal>();
+            birds.Add(falcon);
+
+            //add to habitat inhabitants list
+            birdHabitat.inhabitants = birds;
+
+            //iterate over list
+            Console.WriteLine("\n\n");
+            Console.WriteLine("Habitat: Bird Habitat");
+            foreach(Animal inhabitant in birds)
+            {
+                Console.WriteLine(inhabitant.name);
+            }
+            
+                        
 
 
 
@@ -57,8 +105,6 @@ namespace ConsoleApplication
             // bear.hasClaws = true;
             // Console.WriteLine("\n");
             
-
-
             //Instance of great white shark class
             // Console.WriteLine("Implementation of shark");
             // var shark = new CarcharodonCarcharias("zero");

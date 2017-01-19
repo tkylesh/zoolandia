@@ -9,12 +9,18 @@ namespace Zoolandia.Animals
     } 
 
     // Species class, inherits from the corresponding genus class
-    public class Falconiforme:Crocodylus
+    public class Falconiforme:Falco
     {
         public string commonName = "Falcon";
         public string scientificName = "Falconiforme";
 
         public string genus = "Falco";
+
+        //constructor method
+        public Falconiforme(string name)
+        {
+            this.name = name;
+        }
 
         //overloaded methods
         public void eat()
