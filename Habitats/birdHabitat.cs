@@ -6,27 +6,16 @@ namespace Zoolandia.Habitats
 {
     public class BirdHabitat : Habitat, IBirdHabitat
     {
-        public int sqft
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public int sqft {get; set;}
 
         public void perch()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("perch.");
         }
 
         public void trees()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("trees.");
         }
 
         public BirdHabitat (string name, int sqfeet)

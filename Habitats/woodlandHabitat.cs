@@ -6,27 +6,15 @@ namespace Zoolandia.Habitats
 {
     public class WoodlandHabitat : Habitat, IWoodlandHabitat
     {
-        public int acres
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
+        public int acres {get; set;}
         public void grass()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("grass.");
         }
 
         public void trees()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("trees.");
         }
 
         public WoodlandHabitat (string name, int acres)
